@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link href="reduce_friction.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBn+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+</head>
+
+<body>
+    <div id="mainpage"> 
+    <div class="main">
+        <h1 class="head"> WHEELS REDUCE FRICTION </h1>
+        <p class="para"> BY TEAM ALAN TURING </p>
+        <marquee class="scroll"> TEAM N03 </marquee>
+    </div>
+    <div class="main2">
+        <div class="d-flex flex-row justify-content-center">
+            <div class="image-item">
+                <h1> Rough Surface </h1>
+                <img id="rough" src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1657902194/7428d0b7d9f24fb9affa7ce65858c48brK4oO3A7j0EkGkdO-0_fpa3fz.jpg" class="image1"/>
+                <div class="d-flex flex-row justify-content-center">
+                <button class="button btn btn-primary" onclick="roughless()"> less force</button>
+                <button class="button btn btn-success" onclick="roughhigh()"> high force</button>
+                <button class="button btn btn-danger" onclick="roughstop()"> stop</button>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="image-item">
+                    <h1> Smooth Surface </h1>
+                    <img id="smooth" src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1657902194/7428d0b7d9f24fb9affa7ce65858c48brK4oO3A7j0EkGkdO-0_fpa3fz.jpg" class="image1"/>
+                    <div class="d-flex flex-row justify-content-center">
+                    <button class="button btn btn-primary" onclick="smoothless()"> less force</button>
+                    <button class="button button btn btn-success" onclick="smoothhigh()"> high force</button>
+                    <button class="button button btn btn-danger" onclick="smoothstop()"> stop</button>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="d-flex flex-row justify-content-center">
+            <div class="image-item">
+                <h1> Without Wheels </h1>
+                <img id="box" src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1657902194/7428d0b7d9f24fb9affa7ce65858c48brK4oO3A7j0EkGkdO-0_fpa3fz.jpg" class="image1"/>
+                <div class="d-flex flex-column justify-content-center">
+                    <div class="d-flex flex-row justify-content-center">
+                        <button class="button btn btn-primary" onclick="boxless()"> less force</button>
+                        <button class="button button btn btn-success" onclick="boxhigh()"> high force</button>
+                        <button class="button button btn btn-danger" onclick="boxstop()"> stop</button>
+
+                    </div>
+                    <div class="text-center"> 
+                        <button class="button button btn btn-warning" onclick="boxmedium()"> medium force</button>
+                    </div>
+                </div>
+            </div>
+            <div class="d-flex flex-row justify-content-center">
+                <div class="image-item">
+                    <h1> By Using Wheels </h1>
+                    <img id="wheel" src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1657902205/18c93a32ed7649f5c83ba3e26e615605Ae7D8Ft7hq18Gqxz-0_kfkfxx.jpg" class="image1"/>
+                    <div class="d-flex flex-row justify-content-center">
+                    <button class="button btn btn-primary" onclick="wheelless()"> less force</button>
+                    <button class="button button btn btn-success" onclick="wheelhigh()"> high force</button>
+                    <button class="button button btn btn-danger" onclick="wheelstop()"> stop</button>
+                    </div>
+                </div>
+                <div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div class="text-center">
+        <button class="button1" onclick="displaysecondpage()"> Descrption Page </button>
+    </div>
+
+    </div>
+</div>
+<div id="secondpage" class="content-hide second">
+    <div class="d-flex flex-row mb-5">
+    <div class="card1">
+        <h1 class="headp">Rough Surface</h1>
+        <p class="para1">Naturally, rough surfaces have large force of friction. For example, a person can walk perfectly on rough surface. Here in the first image, the surface under the object is rough. So that we can observe that the object moves slow due to less application of force and rough surface. </p>
+    </div>
+    <img src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1656429429/Screen-Shot-2016-11-29-at-6.54.36-PM-700x173_5_tvzrcd.jpg"/>
+</div>
+<div class="d-flex flex-row mb-5">
+    <div class="card1">
+        <h1 class="headp">Smooth Surface</h1>
+        <p class="para1">Naturally, smooth surfaces have less force of friction. Here in the second image the surface under the object is smooth then the object moves very fast due to large application of force and smooth surface. From this we can conclude that force of friction is inversely proportional to amount of force applied on the body. </p>
+    </div>
+    <img src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1656429416/Screen-Shot-2016-11-29-at-6.54.36-PM-700x173_4_myhnzu.jpg"/>
+</div>
+<div class="d-flex flex-row mb-5">
+    <div class="card1">
+        <h1 class="headp">Without Wheels</h1>
+        <p class="para1">Here in the third image there are no wheels for the object so that man should apply large force to move the object for particular destination irrespective of surface. </p>
+    </div>
+    <img src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1656429615/Untitled-2022-06-26-1401.excalidraw_3_r55tqn.jpg" class="image2"/>
+</div>
+<div class="d-flex flex-row mb-5">
+    <div class="card1">
+        <h1 class="headp">Using Wheels</h1>
+        <p class="para1">We know that wheels reduce friction by allowing the contacting surface to roll rather than to drag or slide over each other. By reducing friction a wheel can enable you to use less force to move an object. Here in this image the object is provided with wheels which can reduce friction so that man uses less force when compared with the force applied by the man on the object without wheels to the same particular destination.</p>
+    </div>
+    <img src="https://res.cloudinary.com/djzdkmfjh/image/upload/v1656429598/Untitled-2022-06-26-1401.excalidraw_2_zie4uz.jpg" class="image2"/>
+</div>
+    <button class="button1" onclick="displaymainpage()"> back </button>
+ </div>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+
+</html>
